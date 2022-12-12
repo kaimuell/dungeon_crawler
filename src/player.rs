@@ -21,7 +21,7 @@ impl Player {
         );
     }
 
-    pub fn update(&mut self, ctx : &mut BTerm, map : Map){
+    pub fn update(&mut self, ctx : &mut BTerm, map : &Map){
         if let Some(key) = ctx.key{
             let delta = match key {
             
